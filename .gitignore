@@ -139,3 +139,8 @@ public/
 *.scss.map
 
 # End of https://www.gitignore.io/api/node,sass,macos,firebase
+source/img/CoMotion_LogoAnimation_v02.gif
+source/img/CoMotion_LogoAnimation_v02.gif
+source/img/CoMotion_LogoAnimation_v02.mp4
+build/assets/img/CoMotion_LogoAnimation_v02.webm
+build/assets/img/CoMotion_LogoAnimation_v02.gif
