@@ -1,5 +1,10 @@
+@import url("https://use.typekit.net/sut2jyp.css");
+
 body{
-  background-color: white;
+  background-color: #EEE7E7;    
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #video {
@@ -8,8 +13,9 @@ body{
 }
 
 .descriptionWrapper{
-  padding: 0 25%;
-  margin-top: 45px;
+  padding: 0 32%;
+  margin-top: 200px;
+  margin-bottom: 300px;
 }
 
 #hero{
@@ -20,4 +26,123 @@ body{
 
 .heroGif{
   width: 100%;
+}
+
+h3 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.highlightRed{
+  color:#E03151;
+}
+
+.highlightYellow{
+  color: #EDA626;
+  text-decoration: none;
+}
+
+.highlightYellow:hover{
+  text-decoration: underline;
+}
+
+br {
+  font-size: 10px;
+}
+
+.h1Container {
+  width: 100vw;
+  display: flex;
+}
+
+h1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  margin: auto;
+  color:#1F213A;
+  padding-bottom: 30px;
+}
+
+.calendar {
+   display: grid;
+    grid-template-columns: 1fr .1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 60vw;
+    margin: auto;
+}
+
+.calColumn {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.calSlot {
+  height: 100px;
+  padding: 10px;
+}
+
+
+.calDay {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+  color:#1F213A;
+  margin: auto;
+  display: inline-block;
+  color: #EDA626;
+  margin-top: -10px;
+}
+
+.calDayText {
+  margin: auto;
+  display: inline-block;
+  padding-left: 40px;
+  font-size: 18px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.calTime {
+ display: inline-block;
+ margin-right: 3vw;
+ margin-left: 2vw;
+ margin-top: 10px;
+ font-size: 20px;
+ font-family: futura-pt, sans-serif;
+ font-weight: 500;
+ font-style: normal;
+}
+
+.calDesc {
+  display: inline-block;
+  font-size: 20px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.calBreakBig{
+  font-size: 50px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.calYellow{
+  color: #EDA626;
+}
+
+.calB {
+  background-color: #5668AF;
 }
