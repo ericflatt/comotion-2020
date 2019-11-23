@@ -315,12 +315,19 @@ body {
   padding: 0; }
 
 .descriptionWrapper {
-  padding: 0 32%;
+  padding: 0 20%;
   margin-top: 200px;
   margin-bottom: 300px; }
 
+@media only screen and (max-width: 768px) {
+  .descriptionWrapper {
+    margin-top: 0px;
+    padding: 0 10%; } }
+
+.comingSoon {
+  text-align: center; }
+
 #hero {
-  height: 100vh;
   background-size: 100%;
   background-repeat: no-repeat; }
 
@@ -339,9 +346,6 @@ h3 {
 .highlightYellow {
   color: #EDA626;
   text-decoration: none; }
-
-.highlightYellow:hover {
-  text-decoration: underline; }
 
 br {
   font-size: 10px; }
