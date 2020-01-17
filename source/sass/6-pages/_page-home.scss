@@ -15,7 +15,7 @@ body{
 .descriptionWrapper{
   padding: 0 20%;
   margin-top: 200px;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 768px){
@@ -156,4 +156,58 @@ h1 {
 
 .calB {
   background-color: #5668AF;
+}
+
+.BG {
+  width: 15%;
+  position: absolute;
+  z-index: -20;
+}
+
+.rightSVG {
+  right: 0;
+}
+
+.calendarWrapper, .aboutWrapper {
+  margin: auto;
+}
+
+.aboutWrapper {
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  font-size: 20px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.SpaceDiv {
+  height: 120vw;
+}
+
+.aboutDesc {
+  max-width: 600px;
+}
+
+.smallSpaceDiv {
+  height: 10vw;
+}
+
+.attendeesBG {
+  background-color: #5668AF;
+  width: 100vw;
+}
+
+.attendeesWrapper {
+  height: 100vw;
+  margin: auto;
+}
+
+.attendeesSVG {
+  width: 100vw;
+  z-index: -20;
+  position: absolute;
 }
