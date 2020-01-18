@@ -544,3 +544,26 @@ p {
   margin: auto;
   margin-bottom: 50px;
   margin-top: -15px; }
+
+.attendeesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+  .attendeesGrid div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .attendeesGrid img {
+    max-width: 100%;
+    padding: 50px;
+    opacity: .7;
+    transition: .2s ease; }
+  .attendeesGrid img:hover {
+    opacity: 1; }
+
+@media only screen and (max-width: 800px) {
+  .attendeesGrid img {
+    max-width: 100%;
+    padding: 15px; } }
