@@ -5,6 +5,7 @@ body{
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 #video {
@@ -14,8 +15,9 @@ body{
 
 .descriptionWrapper{
   padding: 0 20%;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px){
@@ -23,10 +25,6 @@ body{
     margin-top: 0px;
     padding: 0 10%;
   }
-}
-
-.comingSoon{
-  text-align: center;
 }
 
 #hero{
@@ -84,8 +82,16 @@ h1 {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    width: 60vw;
+    width: 800px;
     margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .calendar {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
 }
 
 .calColumn {
@@ -97,8 +103,7 @@ h1 {
 }
 
 .calSlot {
-  height: 100px;
-  padding: 10px;
+  height: 80px;
 }
 
 
@@ -127,9 +132,8 @@ h1 {
 .calTime {
  display: inline-block;
  margin-right: 3vw;
- margin-left: 2vw;
  margin-top: 10px;
- font-size: 20px;
+ font-size: 16px;
  font-family: futura-pt, sans-serif;
  font-weight: 500;
  font-style: normal;
@@ -143,8 +147,13 @@ h1 {
   font-style: normal;
 }
 
+.calLocation {
+  font-size: 16px;
+  color:#1F213A;
+}
+
 .calBreakBig{
-  font-size: 50px;
+  font-size: 40px;
   font-family: futura-pt, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -154,12 +163,14 @@ h1 {
   color: #EDA626;
 }
 
-.calB {
-  background-color: #5668AF;
+
+
+.calBlue {
+  color: #5668AF;
 }
 
 .BG {
-  width: 15%;
+  width: 150px;
   position: absolute;
   z-index: -20;
 }
@@ -168,12 +179,24 @@ h1 {
   right: 0;
 }
 
-.calendarWrapper, .aboutWrapper {
+.calendarWrapper {
+  padding-bottom: 200px;
+}
+
+.calendarWrapper, .aboutWrapper, .speakersWrapper {
   margin: auto;
+}
+
+.calendarWrapper {
+  margin-top: 100px;
+  h1 {
+    text-align: center;
+  }
 }
 
 .aboutWrapper {
   text-align: center;
+  max-width: 700px;
 }
 
 p {
@@ -185,7 +208,7 @@ p {
 }
 
 .SpaceDiv {
-  height: 120vw;
+  height: 110vw;
 }
 
 .aboutDesc {
@@ -198,16 +221,81 @@ p {
 
 .attendeesBG {
   background-color: #5668AF;
-  width: 100vw;
+  width: 100%;
+  margin-top: 10vw;
 }
 
 .attendeesWrapper {
   height: 100vw;
   margin: auto;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .attendeesSVG {
-  width: 100vw;
+  width: 101%;
   z-index: -20;
   position: absolute;
+}
+
+#attendees {
+  max-width: 100vw;
+  display: grid;
+}
+
+.attendeesSVGbottom {
+  width: 101%;
+  z-index: -20;
+}
+
+.speakersWrapper {
+  height: 60vw;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+.teamBG {
+  background-color: #EDA626;
+  width: 100%;
+  margin-top: 10vw;
+}
+
+.teamWrapper {
+  height: 100vw;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.teamSVG {
+  width: 101%;
+  z-index: -20;
+  position: absolute;
+}
+
+#team {
+  max-width: 100vw;
+  display: grid;
+}
+
+.teamSVGbottom {
+  width: 101%;
+  z-index: -20;
+}
+
+.locationWrapper {
+  height: 60vw;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.headerSVG {
+  width: 35%;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: -15px;
 }
