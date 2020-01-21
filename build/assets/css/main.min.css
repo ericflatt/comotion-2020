@@ -552,7 +552,7 @@ p {
   color: #EEE7E7; }
 
 .attendeesHeader {
-  width: 23%; }
+  width: 27%; }
 
 @media only screen and (max-width: 1050px) {
   .BG {
@@ -599,3 +599,61 @@ p {
       padding: 5px; }
   .rowAfter {
     margin-top: -10px; } }
+
+.speakersHeader {
+  width: 44%; }
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  max-width: 900px;
+  margin: auto; }
+  @media only screen and (max-width: 950px) {
+    .teamGrid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      max-width: 600px; } }
+  @media only screen and (max-width: 700px) {
+    .teamGrid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      max-width: 500px; } }
+
+.teamRow {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.teamPerson {
+  padding: 10px;
+  text-decoration: none;
+  display: block; }
+  .teamPerson img {
+    width: 160px; }
+    @media only screen and (max-width: 950px) {
+      .teamPerson img {
+        width: 140px; } }
+  .teamPerson h4 {
+    font-family: futura-pt, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #5668AF; }
+    @media only screen and (max-width: 950px) {
+      .teamPerson h4 {
+        font-size: 20px; } }
+  .teamPerson p {
+    text-align: left;
+    margin-top: 0px;
+    display: block;
+    color: #1F213A; }
+
+.bigName {
+  margin-top: 35px; }
+
+.teamHeader {
+  width: 23%; }
