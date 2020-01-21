@@ -484,7 +484,6 @@ p {
   margin-top: 10vw; }
 
 .attendeesWrapper {
-  height: 100vw;
   margin: auto;
   margin-top: 100px;
   text-align: center; }
@@ -514,7 +513,6 @@ p {
   margin-top: 10vw; }
 
 .teamWrapper {
-  height: 100vw;
   margin: auto;
   margin-top: 100px;
   text-align: center; }
@@ -581,9 +579,12 @@ p {
     opacity: 1; }
     .attendeesGrid a:hover p {
       opacity: .7; }
+      @media only screen and (max-width: 800px) {
+        .attendeesGrid a:hover p {
+          opacity: 0; } }
   .attendeesGrid p {
     opacity: 0;
-    margin-top: -40px;
+    margin-top: -37px;
     display: block;
     transition: .2s ease;
     color: #1F213A; }

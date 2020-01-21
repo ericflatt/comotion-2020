@@ -226,7 +226,7 @@ p {
 }
 
 .attendeesWrapper {
-  height: 100vw;
+  // height: 100vw;
   margin: auto;
   margin-top: 100px;
   text-align: center;
@@ -263,7 +263,6 @@ p {
 }
 
 .teamWrapper {
-  height: 100vw;
   margin: auto;
   margin-top: 100px;
   text-align: center;
@@ -350,12 +349,15 @@ p {
     opacity: 1;
     p {
       opacity: .7;
+      @media only screen and (max-width:800px){
+      opacity: 0;
+      }
     }
   }
 
   p {
     opacity: 0;
-    margin-top: -40px;
+    margin-top: -37px;
     display: block;
     transition: .2s ease;
     color: #1F213A;
