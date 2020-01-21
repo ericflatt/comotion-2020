@@ -293,11 +293,29 @@ p {
 }
 
 .headerSVG {
-  width: 35%;
+  width: 40%;
   display: block;
   margin: auto;
   margin-bottom: 50px;
   margin-top: -15px;
+}
+
+.aboutHeader {
+  width: 30%;
+}
+
+.textWhite {
+  color: #EEE7E7;;
+}
+
+.attendeesHeader {
+  width: 23%;
+}
+
+@media only screen and (max-width: 1050px){
+  .BG {
+    display: none;
+  }
 }
 
 .attendeesGrid {
@@ -306,6 +324,8 @@ p {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  max-width: 800px;
+  margin:auto;
 
 
   div{
@@ -316,22 +336,46 @@ p {
 
   img{
     max-width: 100%;
-    padding: 50px;
-    opacity: .7;
-    transition: .2s ease;
+    padding: 20px;
+
   }
 
-  img:hover{
+  a {
+    opacity: .7;
+    transition: .2s ease;
+    text-decoration: none;
+  }
+
+  a:hover{
     opacity: 1;
+    p {
+      opacity: .7;
+    }
+  }
+
+  p {
+    opacity: 0;
+    margin-top: -40px;
+    display: block;
+    transition: .2s ease;
+    color: #1F213A;
   }
 
 }
 
+.rowAfter {
+  margin-top: -40px;
+}
+
 @media only screen and (max-width:800px){
   .attendeesGrid{
+    max-width: 90%;
     img{
       max-width: 100%;
-      padding: 15px;
+      padding: 5px;
     }
+  }
+  .rowAfter {
+    margin-top: -10px;
   }
 }
