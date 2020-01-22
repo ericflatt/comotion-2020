@@ -8,6 +8,46 @@ body{
   overflow-x: hidden;
 }
 
+
+.solid{
+  visibility: visible;
+  transition: .3s ease;
+  animation: fadein .3s ease-in;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+nav{
+  visibility: hidden;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  background-color: #EEE7E7;
+  padding: 15px;
+  border-bottom: 3px solid #151E38;
+
+  a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #151E38;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+
+  a:nth-child(6){
+    margin-right: 20px;
+  }
+
+  div:nth-child(2){
+    margin-left: auto;
+  }
+}
+
 #video {
   width: 100%;
   padding: 0;
@@ -180,7 +220,7 @@ h1 {
 }
 
 .calendarWrapper {
-  padding-bottom: 200px;
+  padding-bottom: 0px;
 }
 
 .calendarWrapper, .aboutWrapper, .speakersWrapper {
@@ -197,6 +237,7 @@ h1 {
 .aboutWrapper {
   text-align: center;
   max-width: 700px;
+  padding-top: 200px;
 }
 
 p {

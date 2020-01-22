@@ -9,6 +9,42 @@ window.sr = ScrollReveal();
 //     distance: '100px' 
 // });
 
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+$(document).ready(function() {
+
+  $(window).scroll(function() {
+
+    if($(this).scrollTop() > 500) {
+        $('nav').addClass('solid');
+    } else {
+        $('nav').removeClass('solid');
+    }
+  });
+});
+
 
 // Initialize and add the map
 function initMap() {
