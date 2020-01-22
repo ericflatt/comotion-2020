@@ -502,7 +502,6 @@ p {
   z-index: -20; }
 
 .speakersWrapper {
-  height: 60vw;
   margin: auto;
   margin-top: 100px;
   text-align: center; }
@@ -558,12 +557,28 @@ p {
 
 .attendeesGrid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto; }
+  @media only screen and (max-width: 1000px) {
+    .attendeesGrid {
+      max-width: 800px; } }
+  @media only screen and (max-width: 800px) {
+    .attendeesGrid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+      max-width: 600px; } }
+  @media only screen and (max-width: 800px) {
+    .attendeesGrid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+      max-width: 600px; } }
+  @media only screen and (max-width: 600px) {
+    .attendeesGrid {
+      max-width: 80%; } }
   .attendeesGrid div {
     display: flex;
     align-items: center;
@@ -575,6 +590,10 @@ p {
     opacity: .7;
     transition: .2s ease;
     text-decoration: none; }
+    @media only screen and (max-width: 600px) {
+      .attendeesGrid a {
+        width: 20vw;
+        height: 150px; } }
   .attendeesGrid a:hover {
     opacity: 1; }
     .attendeesGrid a:hover p {
@@ -593,18 +612,15 @@ p {
   margin-top: -40px; }
 
 @media only screen and (max-width: 800px) {
-  .attendeesGrid {
-    max-width: 90%; }
-    .attendeesGrid img {
-      max-width: 100%;
-      padding: 5px; }
+  .attendeesGrid img {
+    padding: 5px; }
   .rowAfter {
     margin-top: -10px; } }
 
 .speakersHeader {
   width: 44%; }
 
-.teamGrid {
+.teamGridMOME {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -613,12 +629,12 @@ p {
   max-width: 900px;
   margin: auto; }
   @media only screen and (max-width: 950px) {
-    .teamGrid {
+    .teamGridMOME {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 1fr);
       max-width: 600px; } }
   @media only screen and (max-width: 700px) {
-    .teamGrid {
+    .teamGridMOME {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
       max-width: 500px; } }
@@ -658,3 +674,22 @@ p {
 
 .teamHeader {
   width: 23%; }
+
+.teamGridBranding {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  max-width: 900px;
+  margin: auto; }
+  @media only screen and (max-width: 950px) {
+    .teamGridBranding {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      max-width: 600px; } }
+  @media only screen and (max-width: 700px) {
+    .teamGridBranding {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      max-width: 500px; } }
