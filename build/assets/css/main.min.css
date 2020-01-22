@@ -563,7 +563,6 @@ p {
   z-index: -20; }
 
 .locationWrapper {
-  height: 60vw;
   margin: auto;
   margin-top: 100px;
   text-align: center; }
@@ -728,10 +727,14 @@ p {
       max-width: 500px; } }
 
 #map {
-  width: 600px;
+  max-width: 600px;
   height: 400px;
   background-color: grey;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 60px; }
+  @media only screen and (max-width: 700px) {
+    #map {
+      max-width: 80%; } }
 
 .locationHeader {
   width: 45%; }
@@ -740,14 +743,14 @@ p {
   display: inline-flex;
   padding-bottom: 30px;
   line-height: 2em; }
+  .addressWrapper :hover {
+    font-style: italic; }
 
 .addressMOA, .addressArnold {
   color: #ED284F;
   text-decoration: none;
   padding: 10px;
   font-size: 22px; }
-  .addressMOA :hover, .addressArnold :hover {
-    font-style: italic; }
 
 .addressMOA {
   padding-right: 30px; }

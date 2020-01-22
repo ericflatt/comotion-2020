@@ -326,7 +326,7 @@ p {
 }
 
 .locationWrapper {
-  height: 60vw;
+  // height: 60vw;
   margin: auto;
   margin-top: 100px;
   text-align: center;
@@ -535,10 +535,14 @@ p {
 }
 
 #map {
-  width: 600px;
+  max-width: 600px;
   height: 400px;
   background-color: grey;
   margin: auto;
+  margin-bottom: 60px;
+  @media only screen and (max-width: 700px){
+      max-width: 80%;
+  }
 }
 
 .locationHeader {
@@ -549,6 +553,9 @@ p {
   display: inline-flex;
   padding-bottom: 30px;
   line-height: 2em;
+  :hover {
+    font-style: italic;
+  }
 }
 
 .addressMOA, .addressArnold {
@@ -556,9 +563,6 @@ p {
   text-decoration: none;
   padding: 10px;
   font-size: 22px;
-  :hover {
-    font-style: italic;
-  }
 }
 
 .addressMOA {
