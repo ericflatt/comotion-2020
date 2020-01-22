@@ -697,7 +697,30 @@ p {
 #map {
   width: 600px;
   height: 400px;
-  background-color: grey; }
+  background-color: grey;
+  margin: auto; }
 
 .locationHeader {
   width: 45%; }
+
+.addressWrapper {
+  display: inline-flex;
+  padding-bottom: 30px;
+  line-height: 2em; }
+
+.addressMOA, .addressArnold {
+  color: #ED284F;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px; }
+  .addressMOA :hover, .addressArnold :hover {
+    font-style: italic; }
+
+.addressMOA {
+  padding-right: 30px; }
+
+.addressArnold {
+  padding-left: 30px; }
+
+.boldText {
+  font-weight: 600; }
