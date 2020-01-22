@@ -351,8 +351,13 @@
   <section id="location">
     <div class="locationWrapper">
       <h1>LOCATIONS</h1>
+      <img src="./assets/svg/locationHeader.svg" class="headerSVG locationHeader" alt="">
+      <div id="map"></div>
     </div>
   </section>
+
+  <!-- https://maps.googleapis.com/maps/api/staticmap?key=YOUR_API_KEY&center=32.07359177910376,-81.10331539911282&zoom=15&format=png&maptype=roadmap&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x844c49&style=element:labels.text.stroke%7Ccolor:0xf0cdc9%7Cvisibility:on%7Cweight:2&style=feature:landscape.man_made%7Celement:geometry.fill%7Ccolor:0xe0e4f4&style=feature:landscape.natural%7Celement:geometry.fill%7Ccolor:0xb5bad0&style=feature:poi%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:poi.business%7Cvisibility:off&style=feature:poi.park%7Celement:geometry%7Ccolor:0xb0c5f4&style=feature:road%7Celement:geometry%7Ccolor:0xfffafa&style=feature:road%7Celement:geometry.stroke%7Ccolor:0xa1a2ad&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:road.highway%7Celement:geometry%7Ccolor:0x97a3be&style=feature:road.local%7Celement:geometry.fill%7Ccolor:0xfff1de&style=feature:transit%7Cvisibility:off&style=feature:transit.line%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:transit.station%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:water%7Celement:geometry%7Ccolor:0x8995c7&style=feature:water%7Celement:labels.text.fill%7Ccolor:0xe6e6e6&size=480x360 -->
+
 
   <!--
   <section id="calendar">
@@ -390,7 +395,9 @@
     </div>
   </section>
     -->
-  
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8VLIJ9cg6WcAYn7H4CNFlTByrwDDHYfo&callback=initMap">
+  </script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>

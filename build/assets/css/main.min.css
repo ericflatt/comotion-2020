@@ -693,3 +693,11 @@ p {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(9, 1fr);
       max-width: 500px; } }
+
+#map {
+  width: 600px;
+  height: 400px;
+  background-color: grey; }
+
+.locationHeader {
+  width: 45%; }
