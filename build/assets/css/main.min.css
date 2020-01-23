@@ -393,6 +393,7 @@ h1 {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-style: normal;
+  letter-spacing: .02em;
   font-size: 48px;
   margin: auto;
   color: #1F213A;
@@ -404,7 +405,6 @@ h1 {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 800px;
   margin: auto; }
 
 @media only screen and (max-width: 800px) {
@@ -778,3 +778,6 @@ p {
 
 .boldText {
   font-weight: 600; }
+
+.badKerning {
+  font-size: 10px; }
