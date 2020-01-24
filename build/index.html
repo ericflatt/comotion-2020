@@ -61,6 +61,9 @@
   <section id="calendar">
     <img src="./assets/svg/Group 27.svg" class="BG" alt="">
     <img src="./assets/svg/Group 28.svg" class="BG rightSVG" alt="">
+    <img src="./assets/img/Ellipse 2.svg" class="yellowBall lax" speed="2" data-lax-preset="linger" alt="">
+    <img src="./assets/img/Ellipse 3.svg" class="redBall lax" data-lax-preset="linger" alt="">
+    <img src="./assets/img/Ellipse 1.svg" class="blueBall lax" data-lax-preset="linger" alt="">
     <div class="calendarWrapper">
       <h1>CALENDAR</h1>
       <img src="./assets/svg/calendarHeader.svg" class="headerSVG" alt="">
@@ -399,9 +402,24 @@
       <div id="map"></div>
     </div>
   </section>
+
+  <script>
+  window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+  </script>
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8VLIJ9cg6WcAYn7H4CNFlTByrwDDHYfo&callback=initMap">
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>
