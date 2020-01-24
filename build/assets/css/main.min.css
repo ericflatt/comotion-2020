@@ -311,6 +311,30 @@ body {
   font-style: normal;
   overflow-x: hidden; }
 
+@media only screen and (max-width: 1050px) {
+  .lax {
+    display: none; } }
+
+.redBall {
+  position: absolute;
+  left: 200px;
+  margin-top: 10px;
+  width: 50px; }
+
+.blueBall {
+  width: 150px;
+  position: absolute;
+  left: 50px;
+  z-index: -100;
+  margin-top: 650px; }
+
+.yellowBall {
+  width: 100px;
+  position: absolute;
+  right: 50px;
+  margin-top: 300px;
+  z-index: -100; }
+
 .solid {
   visibility: visible;
   transition: .3s ease;
@@ -379,7 +403,7 @@ h3 {
   color: #E03151; }
 
 .highlightYellow {
-  color: #EDA626;
+  color: #FBA91A;
   text-decoration: none; }
 
 br {
@@ -431,7 +455,7 @@ h1 {
   color: #1F213A;
   margin: auto;
   display: inline-block;
-  color: #EDA626;
+  color: #FBA91A;
   margin-top: -10px; }
 
 .calDayText {
@@ -470,7 +494,7 @@ h1 {
   font-style: normal; }
 
 .calYellow {
-  color: #EDA626; }
+  color: #FBA91A; }
 
 .calBlue {
   color: #5668AF; }
@@ -547,7 +571,7 @@ p {
   text-align: center; }
 
 .teamBG {
-  background-color: #EDA626;
+  background-color: #FBA91A;
   width: 100%;
   margin-top: 10vw; }
 
