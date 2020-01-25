@@ -360,7 +360,7 @@ nav {
   background-color: #EEE7E7;
   padding: 15px;
   border-bottom: 3px solid #151E38; }
-  nav a {
+  nav a, nav div {
     font-size: 18px;
     text-decoration: none;
     color: #151E38;
@@ -369,7 +369,11 @@ nav {
   nav a:nth-child(6) {
     margin-right: 20px; }
   nav div:nth-child(2) {
-    margin-left: auto; }
+    margin-left: auto;
+    display: flex; }
+
+.current a {
+  color: #E03151 !important; }
 
 #video {
   width: 100%;
