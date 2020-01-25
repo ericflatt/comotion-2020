@@ -300,7 +300,7 @@ p {
 }
 
 .attendeesBG {
-  background-color: #5668AF;
+  background-color: #FBA91A;
   width: 100%;
   margin-top: 10vw;
 }
@@ -313,7 +313,7 @@ p {
 }
 
 .attendeesSVG {
-  width: 101%;
+  width: 100%;
   z-index: -20;
   position: absolute;
 }
@@ -324,7 +324,7 @@ p {
 }
 
 .attendeesSVGbottom {
-  width: 101%;
+  width: 100%;
   z-index: -20;
 }
 
@@ -337,7 +337,7 @@ p {
 
 
 .teamBG {
-  background-color: #FBA91A;
+  background-color: #5668AF;
   width: 100%;
   margin-top: 10vw;
 }
@@ -346,7 +346,10 @@ p {
   margin: auto;
   margin-top: 100px;
   text-align: center;
-  width: 100vw;
+  width: 100%;
+  h3 {
+    color: #ffffff;
+  }
 }
 
 .teamSVG {
@@ -361,8 +364,9 @@ p {
 }
 
 .teamSVGbottom {
-  width: 101%;
+  width: 100%;
   z-index: -20;
+  // position: absolute;
 }
 
 .locationWrapper {
@@ -437,7 +441,7 @@ p {
   }
 
   a {
-    opacity: .7;
+    opacity: 1;
     transition: .2s ease;
     text-decoration: none;
     @media only screen and (max-width:600px){
@@ -514,16 +518,16 @@ p {
 }
 
 .teamPerson {
-  padding: 15px;
+  padding: 9px;
   @media only screen and (max-width: 950px){
-    padding: 2px !important;
+    padding: 10px !important;
   }
   text-decoration: none;
   display: block;
   img {
     width: 160px;
     @media only screen and (max-width: 950px){
-      width: 100px !important;
+      width: 90% !important;
     }
 
   }
@@ -537,7 +541,7 @@ p {
     text-align: left;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: #5668AF;
+    color: #FBA91A;
   }
 
   p {
@@ -548,7 +552,8 @@ p {
     text-align: left;
     margin-top: 0px;
     display: block;
-    color: #1F213A;
+    color: #ffffff;
+    // opacity: .7;
   }
 }
 
