@@ -1,4 +1,11 @@
 
+  $('#nav').onePageNav({
+    currentClass: 'current',
+    changeHash: false,
+    scrollThreshold: 0.5
+  });
+
+
 // JavaScript
 window.sr = ScrollReveal(); 
 

@@ -65,7 +65,7 @@ nav{
   padding: 15px;
   border-bottom: 3px solid #151E38;
 
-  a{
+  a, div{
     font-size: 18px;
     text-decoration: none;
     color: #151E38;
@@ -79,7 +79,12 @@ nav{
 
   div:nth-child(2){
     margin-left: auto;
+    display: flex;
   }
+}
+
+.current a{
+  color: #E03151 !important;
 }
 
 #video {
