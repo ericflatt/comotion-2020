@@ -53,6 +53,19 @@ $(document).ready(function() {
   });
 });
 
+// pencil to top
+$(document).ready(function() {
+
+  $(window).scroll(function() {
+
+    if($(this).scrollTop() > 500) {
+        $('.toTop').addClass('solid');
+    } else {
+        $('.toTop').removeClass('solid');
+    }
+  });
+});
+
 
 // Initialize and add the map
 function initMap() {

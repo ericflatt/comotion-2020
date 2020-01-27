@@ -311,6 +311,13 @@ body {
   font-style: normal;
   overflow-x: hidden; }
 
+.toTop {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  bottom: 20px;
+  transform: rotate(180deg); }
+
 @media only screen and (max-width: 1050px) {
   .lax {
     display: none; } }
@@ -339,6 +346,8 @@ body {
   visibility: visible;
   transition: .3s ease;
   animation: fadein .3s ease-in; }
+  .solid img {
+    width: 45%; }
 
 @keyframes fadein {
   from {
