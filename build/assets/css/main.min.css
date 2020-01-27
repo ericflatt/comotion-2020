@@ -311,6 +311,10 @@ body {
   font-style: normal;
   overflow-x: hidden; }
 
+@media only screen and (max-width: 1050px) {
+  .toTop {
+    display: none; } }
+
 .toTop {
   position: fixed;
   bottom: 0;
@@ -342,12 +346,67 @@ body {
   margin-top: 300px;
   z-index: -100; }
 
+.smallYellow {
+  position: absolute;
+  left: 150px;
+  margin-top: 150px;
+  width: 50px; }
+
+.mediumYellow {
+  width: 100px;
+  position: absolute;
+  right: 50px;
+  margin-top: 500px;
+  z-index: 900; }
+
+.mediumYellowTwo {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  margin-top: 2000px;
+  z-index: 900; }
+
+.largeYellow {
+  width: 150px;
+  position: absolute;
+  left: -50px;
+  z-index: 900;
+  margin-top: 1000px; }
+
+.smallBlue {
+  position: absolute;
+  left: 150px;
+  margin-top: 150px;
+  width: 50px; }
+
+.mediumBlue {
+  width: 100px;
+  position: absolute;
+  right: 50px;
+  margin-top: 500px;
+  z-index: 900; }
+
+.mediumBlueTwo {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  margin-top: 2000px;
+  z-index: 900; }
+
+.largeBlue {
+  width: 150px;
+  position: absolute;
+  left: -50px;
+  z-index: 900;
+  margin-top: 1000px; }
+
 .solid {
   visibility: visible;
   transition: .3s ease;
   animation: fadein .3s ease-in; }
   .solid img {
-    width: 45%; }
+    width: 25%;
+    z-index: 1300; }
 
 @keyframes fadein {
   from {
