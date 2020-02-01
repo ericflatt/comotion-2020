@@ -1,7 +1,7 @@
 {
     "name": "comotionwebsite",
     "version": "1.0.0",
-    "description": "Comotion 2020",
+    "description": "CoMotion 2020",
     "main": "index.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
