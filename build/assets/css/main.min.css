@@ -658,7 +658,8 @@ p {
     color: #ffffff; }
 
 .teamSVG {
-  width: 100vw;
+  width: calc(100vw + 10px);
+  margin-left: -2px;
   z-index: -20;
   position: absolute; }
 
@@ -668,7 +669,9 @@ p {
 
 .teamSVGbottom {
   width: 100%;
-  z-index: -20; }
+  z-index: -20;
+  margin-left: -2px;
+  margin-top: -2px; }
 
 .locationWrapper {
   margin: auto;
