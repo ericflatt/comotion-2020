@@ -616,7 +616,7 @@ p {
 
 .attendeesBG {
   background-color: #FBA91A;
-  width: 100%;
+  width: 100vw;
   margin-top: 10vw; }
 
 .attendeesWrapper {
@@ -625,8 +625,9 @@ p {
   text-align: center; }
 
 .attendeesSVG {
-  width: 100%;
+  width: calc(100vw + 10px);
   z-index: -20;
+  margin-left: -2px;
   position: absolute; }
 
 #attendees {
@@ -635,7 +636,8 @@ p {
 
 .attendeesSVGbottom {
   width: 100%;
-  z-index: -20; }
+  z-index: -20;
+  margin-top: -2px; }
 
 .speakersWrapper {
   margin: auto;
@@ -651,12 +653,12 @@ p {
   margin: auto;
   margin-top: 100px;
   text-align: center;
-  width: 100%; }
+  width: 100vw; }
   .teamWrapper h3 {
     color: #ffffff; }
 
 .teamSVG {
-  width: 101%;
+  width: 100vw;
   z-index: -20;
   position: absolute; }
 
