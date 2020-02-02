@@ -314,7 +314,15 @@ h1 {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: normal;
+  @media only screen and (max-width:800px){
+  padding-left: 6px;
+  }
 }
+
+.calIndent {
+  margin-left: 8px;
+}
+
 
 .calLocation {
   font-size: 16px;
