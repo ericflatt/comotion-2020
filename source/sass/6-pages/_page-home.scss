@@ -8,6 +8,10 @@ body{
   overflow-x: hidden;
 }
 
+section {
+  overflow: hidden;
+}
+
 @media only screen and (max-width:1050px){
   .toTop{
     display: none;
@@ -255,7 +259,7 @@ h1 {
   .calendar {
     display: grid;
     grid-template-columns: 1fr;
-    width: 300px;
+    width: 320px;
   }
 }
 
@@ -327,8 +331,6 @@ h1 {
 .calYellow{
   color: #FBA91A;
 }
-
-
 
 .calBlue {
   color: #5668AF;
