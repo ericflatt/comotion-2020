@@ -414,6 +414,30 @@
 }
   </script>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCg0uolS66v3eys8SAnaZSIMHXCakomy1k",
+    authDomain: "comotion-2020.firebaseapp.com",
+    databaseURL: "https://comotion-2020.firebaseio.com",
+    projectId: "comotion-2020",
+    storageBucket: "comotion-2020.appspot.com",
+    messagingSenderId: "485977704327",
+    appId: "1:485977704327:web:57729d0f1237b77e94f522",
+    measurementId: "G-30YR9B85GS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8VLIJ9cg6WcAYn7H4CNFlTByrwDDHYfo&callback=initMap">
   </script>
