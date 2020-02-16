@@ -830,6 +830,23 @@ p {
         font-size: 16px;
         padding-left: 10px; } }
 
+.volunteersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: auto;
+  width: 40%;
+  max-width: 900px; }
+  @media only screen and (max-width: 1000px) {
+    .volunteersGrid {
+      width: 70%; } }
+  .volunteersGrid a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none; }
+
 .bigName {
   margin-top: 35px; }
 
@@ -893,3 +910,89 @@ p {
 
 .badKerning {
   font-size: 5px !important; }
+
+.mailLink {
+  color: #E03151;
+  text-decoration: none; }
+
+.mailLink:hover {
+  background-color: #E03151;
+  text-decoration: none;
+  color: #EEE7E7; }
+
+#speakers {
+  margin-top: 150px;
+  margin-bottom: 200px; }
+  @media only screen and (max-width: 700px) {
+    #speakers {
+      margin-top: 50px; } }
+
+.speakersWrapper p {
+  max-width: 600px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left; }
+  @media only screen and (max-width: 700px) {
+    .speakersWrapper p {
+      width: 85%;
+      font-size: 18px; } }
+
+.speakersWrapper h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+  color: #E03151;
+  margin-block-start: 20px;
+  margin-block-end: 15px; }
+
+.speakersWrapper h4 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #151E38;
+  margin-block-start: 0;
+  margin-block-end: 20px; }
+
+.speakersWrapper a {
+  text-decoration: none;
+  color: #151E38;
+  font-weight: 600; }
+
+.speakersWrapper a:hover {
+  background-color: #151E38;
+  color: #F2EAEA; }
+
+.speakersWrapper > .headerSVG {
+  margin-bottom: 20px; }
+
+.keynoteSpeakerWrapper, .keynoteIMG {
+  max-width: 300px;
+  margin: auto; }
+
+.speakerBalls {
+  position: absolute;
+  z-index: -100;
+  display: block !important; }
+
+.speakersBall1 {
+  width: 90px;
+  margin-left: 265px;
+  margin-top: -30px; }
+
+.speakersBall2 {
+  width: 140px;
+  margin-left: -80px;
+  margin-top: 70px; }
+
+.speakersBall3 {
+  width: 110px;
+  margin-left: 240px;
+  margin-top: 230px; }
+
+.speakersBall4 {
+  width: 70px;
+  margin-left: -40px;
+  margin-top: 340px; }
