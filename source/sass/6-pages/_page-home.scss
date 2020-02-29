@@ -1012,3 +1012,34 @@ transition: background-size .2s;
 .contactWrapper {
   padding-top: 120px;
 }
+
+.panelHeader {
+  font-size: 20px;
+  color: #E03151 !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+
+.panelList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.panelContainer {
+  margin-bottom: 50px;
+}
+
+.panelList a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.panelList a:hover {
+  font-weight: 600;
+}
+
+.darkBlueText {
+  color: #151E38;
+}
