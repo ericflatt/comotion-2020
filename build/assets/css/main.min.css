@@ -962,13 +962,16 @@ p {
     #speakers {
       margin-top: 50px; } }
 
+.keynotePara {
+  text-align: left !important; }
+
 .speakersWrapper p {
   max-width: 600px;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  text-align: left; }
+  text-align: center; }
   @media only screen and (max-width: 700px) {
     .speakersWrapper p {
       width: 85%;
@@ -1103,12 +1106,11 @@ p {
 .panelContainer {
   margin-bottom: 50px; }
 
-.panelList a {
+.panelList p {
   font-size: 16px;
-  font-weight: 500; }
-
-.panelList a:hover {
-  font-weight: 600; }
+  font-weight: 600;
+  color: #151E38;
+  justify-self: center; }
 
 .darkBlueText {
   color: #151E38; }
