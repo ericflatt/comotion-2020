@@ -957,7 +957,7 @@ p {
 
 #speakers {
   margin-top: 150px;
-  margin-bottom: 200px; }
+  margin-bottom: 100px; }
   @media only screen and (max-width: 700px) {
     #speakers {
       margin-top: 50px; } }
@@ -976,6 +976,9 @@ p {
     .speakersWrapper p {
       width: 85%;
       font-size: 18px; } }
+
+.speakersWrapper h3 {
+  font-weight: 600; }
 
 .speakersWrapper h2 {
   font-family: futura-pt, sans-serif;
@@ -1105,6 +1108,8 @@ p {
 
 .panelContainer {
   margin-bottom: 50px; }
+  .panelContainer p {
+    max-width: 620px !important; }
 
 .panelList p {
   font-size: 16px;
@@ -1114,3 +1119,6 @@ p {
 
 .darkBlueText {
   color: #151E38; }
+
+.panelDiscussions {
+  margin-top: 60px; }

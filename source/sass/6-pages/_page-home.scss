@@ -834,7 +834,7 @@ p {
 
 #speakers {
   margin-top: 150px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   @media only screen and (max-width: 700px){
     margin-top: 50px;
   }
@@ -859,6 +859,9 @@ p {
       width: 85%;
       font-size: 18px;
     }
+  }
+  h3 {
+    font-weight: 600;
   }
   h2 {
     font-family: futura-pt, sans-serif;
@@ -1033,6 +1036,10 @@ transition: background-size .2s;
 
 .panelContainer {
   margin-bottom: 50px;
+  p {
+    max-width: 620px !important;
+
+  }
 }
 
 .panelList p {
@@ -1045,4 +1052,8 @@ transition: background-size .2s;
 
 .darkBlueText {
   color: #151E38;
+}
+
+.panelDiscussions {
+  margin-top: 60px;
 }
