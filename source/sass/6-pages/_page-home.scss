@@ -934,6 +934,16 @@ p {
   width: 120px;
   margin: auto;
   margin-top: 60px;
+  margin-left: 25px;
+}
+
+.comotionIG {
+  width: 120px;
+  margin: auto;
+  margin-top: 60px;
+  margin-right: 25px;
+  padding: 40px;
+
 }
 
 .awesomeLink {
@@ -1056,4 +1066,11 @@ transition: background-size .2s;
 
 .panelDiscussions {
   margin-top: 60px;
+}
+
+.footerIcons {
+  display: inline-flex;
+  margin: auto;
+  align-items: center;
+
 }

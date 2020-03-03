@@ -1037,7 +1037,15 @@ p {
 .momeloveLogo {
   width: 120px;
   margin: auto;
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-left: 25px; }
+
+.comotionIG {
+  width: 120px;
+  margin: auto;
+  margin-top: 60px;
+  margin-right: 25px;
+  padding: 40px; }
 
 .awesomeLink {
   background: linear-gradient(to bottom, #FBA91A 0%, #FBA91A 100%);
@@ -1122,3 +1130,8 @@ p {
 
 .panelDiscussions {
   margin-top: 60px; }
+
+.footerIcons {
+  display: inline-flex;
+  margin: auto;
+  align-items: center; }
